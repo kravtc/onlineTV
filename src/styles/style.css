@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;500;600;700;800&display=swap");
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #021221;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+.nav-item {
+  margin: 0 2.5rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  transition: 0.2s ease color;
+}
+.nav-link:hover {
+  color: white;
+}
+.nav-link::after {
+  content: "";
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 5rem;
+  background: rgb(38, 255, 242);
+  background: linear-gradient(153deg, rgb(38, 255, 242) 0%, rgb(50, 108, 255) 100%);
+  margin-top: 0.4rem;
+}
+.nav-link.active {
+  color: white;
+}
+.nav-link.active::after {
+  opacity: 1;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+.control-item {
+  margin-left: 7.5rem;
+}
+.control-btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.control-btn_search {
+  background-image: url("images/search.svg");
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.control-btn_notice {
+  background-image: url("images/notice.svg");
+  width: 2.13rem;
+  height: 2.35rem;
+}
+.control-btn_account {
+  background-image: url("images/account.svg");
+  width: 1.8rem;
+  height: 1.92rem;
+}
+
+.section {
+  padding-top: 5rem;
+}
+.section__h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  display: inline-block;
+}
+.section__h2::before {
+  content: "";
+  display: block;
+  width: 0.8rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  background: rgb(38, 255, 242);
+  background: linear-gradient(153deg, rgb(38, 255, 242) 0%, rgb(50, 108, 255) 100%);
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1.7rem);
+}
+.section__h2::after {
+  content: "";
+  display: block;
+  width: 0.9rem;
+  height: 1.5rem;
+  background-image: url("images/title-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 0.7rem);
+}
+.section__h2-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.section__btn {
+  margin-top: 5.5rem;
+  border: none;
+  border-radius: 10rem;
+  padding: 1.5rem 3rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  background: rgb(38, 255, 242);
+  background: linear-gradient(153deg, rgb(38, 255, 242) 0%, rgb(50, 108, 255) 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 40px rgb(79, 86, 122);
+  transition: 0.2s ease box-shadow;
+}
+.section__btn:hover {
+  box-shadow: 0 0 0 rgb(79, 86, 122);
+}
+
+.section-banner {
+  border-bottom: 0.1rem solid #363434;
+  position: relative;
+  overflow: hidden;
+}
+.section-banner__image {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.banner {
+  max-width: 56.2rem;
+  padding-top: 12.2rem;
+  padding-bottom: 20.3rem;
+  background-color: #021221;
+  box-shadow: 100px 0 100px #021221;
+}
+.banner__title {
+  font-family: "Marcellus", serif;
+  font-size: 8rem;
+  line-height: 7rem;
+}
+.banner__text {
+  color: #c2c2c2;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.banner-info {
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+.banner-info__year {
+  margin-right: 1.8rem;
+}
+.banner-info__age {
+  margin-right: 1.8rem;
+  position: relative;
+  width: 6rem;
+  display: inline-block;
+  text-align: center;
+}
+.banner-info__age::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2.4rem;
+  background-image: url("images/Rectangle .svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: calc(50% - 1.2rem);
+  right: 0;
+  left: 0;
+}
+.banner-info__time {
+  margin-right: 6.1rem;
+}
+.banner-info__rating {
+  position: relative;
+}
+.banner-info__rating::after {
+  content: "";
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image: url("images/star.svg");
+  margin-left: 1rem;
+  position: absolute;
+  top: calc(50% - 0.8rem);
+  right: -2.6rem;
+}
+.banner-control {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.banner-control__btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 10rem;
+  padding: 1.5rem 3rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+}
+.banner-control__btn-main {
+  background: rgb(38, 255, 242);
+  background: linear-gradient(153deg, rgb(38, 255, 242) 0%, rgb(50, 108, 255) 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 40px rgb(79, 86, 122);
+  position: relative;
+  padding-left: 5rem;
+  margin-right: 3rem;
+  transition: 0.2s ease box-shadow;
+}
+.banner-control__btn-main:hover {
+  box-shadow: 0 0 0 rgb(79, 86, 122);
+}
+.banner-control__btn-main::after {
+  content: "";
+  display: block;
+  width: 1.4rem;
+  height: 1.8rem;
+  background-image: url("images/play.svg");
+  position: absolute;
+  left: 2.6rem;
+  top: calc(50% - 0.9rem);
+}
+.banner-control__btn-more {
+  background-color: #ffffff;
+  color: #323232;
+  transition: 0.2s ease background-color;
+}
+.banner-control__btn-more:hover {
+  background-color: #dcdcdc;
+}
+
+.movies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.movies-item {
+  flex: 0 0 14%;
+  filter: drop-shadow(0 0 0 rgba(44, 176, 249, 0));
+  transition: 0.2s ease filter;
+}
+.movies-item:hover {
+  filter: drop-shadow(0 0 10px rgba(44, 176, 249, 0.5));
+}
+.movies__link {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 30.9rem;
+  display: block;
+}
+.movies__link__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.genres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 2.1rem;
+}
+.genres-item {
+  flex: 0 0 23.7%;
+  border-radius: 2rem;
+  padding: 4.8rem 1rem 3.4rem;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+.genres-item__romance {
+  background: linear-gradient(109.31deg, #fd093f 2.4%, #f383f1 100%);
+}
+.genres-item__action {
+  background: rgb(241, 36, 136);
+  background: linear-gradient(153deg, rgb(241, 36, 136) 0%, rgb(247, 159, 25) 100%);
+}
+.genres-item__comedy {
+  background: rgb(241, 239, 36);
+  background: linear-gradient(153deg, rgb(241, 239, 36) 0%, rgb(227, 105, 11) 100%);
+}
+.genres-item__documentary {
+  background: rgb(255, 246, 107);
+  background: linear-gradient(342deg, rgb(255, 246, 107) 0%, rgb(12, 176, 108) 100%);
+}
+.genres-item__drama {
+  background: rgb(36, 241, 232);
+  background: linear-gradient(153deg, rgb(36, 241, 232) 0%, rgb(7, 198, 106) 100%);
+}
+.genres-item__historical {
+  background: rgb(180, 96, 247);
+  background: linear-gradient(90deg, rgb(180, 96, 247) 0%, rgb(34, 122, 212) 100%);
+}
+.genres-item__horror {
+  background: rgb(128, 191, 155);
+  background: linear-gradient(153deg, rgb(128, 191, 155) 0%, rgb(24, 108, 158) 100%);
+}
+.genres-item__scifi {
+  background: rgb(242, 118, 255);
+  background: linear-gradient(278deg, rgb(242, 118, 255) 0%, rgb(255, 217, 24) 100%);
+}
+.genres__title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: -0.2rem 0 0 0;
+}
+
+.actors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2rem;
+}
+.actors-item {
+  flex: 0 0 14%;
+}
+.actors__link {
+  overflow: hidden;
+  position: relative;
+  width: 19rem;
+  height: 19rem;
+  display: block;
+  border-radius: 100%;
+}
+.actors__link__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  width: 19rem;
+  height: 19rem;
+}
+
+.marketing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2rem;
+}
+.marketing-item {
+  flex: 0 0 50%;
+  border-radius: 2rem;
+}
+.marketing-item:first-child .marketing__link {
+  border-radius: 2rem 0 0 2rem;
+}
+.marketing-item:last-child .marketing__link {
+  border-radius: 0 2rem 2rem 0;
+}
+.marketing__link {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 34.1rem;
+  display: block;
+}
+.marketing__link__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.offer {
+  max-width: 122.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("images/offer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 14.7rem 7.2rem 5.7rem;
+  margin: 12.2rem auto 7rem;
+  box-sizing: border-box;
+}
+.offer__title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  margin: 0;
+  max-width: 80rem;
+}
+.offer__btn {
+  padding: 1.5rem 3rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  background: rgb(38, 255, 242);
+  background: linear-gradient(153deg, rgb(38, 255, 242) 0%, rgb(50, 108, 255) 100%);
+  border: none;
+  border-radius: 10rem;
+  color: #ffffff;
+  box-shadow: 0 4px 40px rgb(79, 86, 122);
+  transition: 0.2s ease box-shadow;
+}
+.offer__btn:hover {
+  box-shadow: 0 0 0 rgb(79, 86, 122);
+}
+
+footer {
+  background-color: #010810;
+  padding: 7rem 0 5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.footer-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.footer-list__item {
+  margin-bottom: 2rem;
+}
+.footer-list__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */

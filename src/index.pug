@@ -1,0 +1,149 @@
+-var pageTitle='Online TV'
+
+doctype html
+html(lang="ru")
+    head
+        title= pageTitle
+        style
+            include styles/normalize.css
+            include styles/style.css
+    body
+        include modules/header
+
+        section.section-banner
+            img(src="/src/images/banner.png", alt="Banner").section-banner__image
+            .container
+                .banner
+                    h1.banner__title The House
+                    .banner-info
+                        span.banner-info__year 2022
+                        span.banner-info__age 16+
+                        span.banner-info__time 1h 37m
+                        span.banner-info__rating 7.2
+                    p.banner__text Across different eras, a poor family, an anxious developer and a fed-up landlady become tied to the same mysterious house in this animated dark comedy.
+                    .banner-control
+                        button.banner-control__btn.banner-control__btn-main Watch
+                        button.banner-control__btn.banner-control__btn-more More information
+        section.section
+            .container
+                h2.section__h2
+                    a(href="#").section__h2-link Trending TV Shows
+                .movies
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/1m.png", alt="Movie1").movies__img
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/2m.png", alt="Movie2").movies__img
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/3m.png", alt="Movie3").movies__img
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/4m.png", alt="Movie4").movies__img
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/5m.png", alt="Movie5").movies__img
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/6m.png", alt="Movie6").movies__img
+        section.section
+            .container
+                h2.section__h2
+                    a(href="#").section__h2-link Trending Movies
+                .movies
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/p1.png", alt="Movie7").movies__img
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/p2.png", alt="Movie8").movies__img
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/p3.png", alt="Movie9").movies__img
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/p4.png", alt="Movie10").movies__img
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/p5.png", alt="Movie11").movies__img
+                    .movies-item
+                        a(href="#").movies__link
+                            img(src="../src/images/movies/p6.png", alt="Movie12").movies__img
+                button.section__btn See more
+        section.section
+            .container
+                h2.section__h2
+                    a(href="#").section__h2-link Popular Genres
+                .genres
+                    .genres-item.genres-item__action
+                        img(src="../src/images/genres/action.svg", alt="Action").genres__img
+                        h3.genres__title Action
+                    .genres-item.genres-item__comedy
+                        img(src="../src/images/genres/comedy.svg", alt="Comedy").genres__img
+                        h3.genres__title Comedy
+                    .genres-item.genres-item__documentary
+                        img(src="../src/images/genres/documentary.svg", alt="Documentary").genres__img
+                        h3.genres__title Documentary
+                    .genres-item.genres-item__drama
+                        img(src="../src/images/genres/drama.svg", alt="Drama").genres__img
+                        h3.genres__title Drama
+                    .genres-item.genres-item__historical
+                        img(src="../src/images/genres/historical.svg", alt="Historical").genres__img
+                        h3.genres__title Historical
+                    .genres-item.genres-item__horror
+                        img(src="../src/images/genres/horror.svg", alt="Horror").genres__img
+                        h3.genres__title Horror
+                    .genres-item.genres-item__romance
+                        img(src="../src/images/genres/hearts.png", alt="Romance").genres__img
+                        h3.genres__title Romance
+                    .genres-item.genres-item__scifi
+                        img(src="../src/images/genres/sci-fi.svg", alt="Sci-fi").genres__img
+                        h3.genres__title Sci-fi
+
+        section.section
+            .container
+                h2.section__h2
+                    a(href="#").section__h2-link Popular Actors & Directors
+                .actors
+                    .actors-item
+                        a(href="#").actors__link
+                            img(src="../src/images/photo/1h.png", alt="Ewen Gunn").actors__img
+                        h3.actors__title Ewen Gunn
+                    .actors-item
+                        a(href="#").actors__link
+                            img(src="../src/images/photo/2h.png", alt="Aadam").actors__img
+                        h3.actors__title Aadam Best
+                    .actors-item
+                        a(href="#").actors__link
+                            img(src="../src/images/photo/3h.png", alt="Stefania Read").actors__img
+                        h3.actors__title Stefania Read
+                    .actors-item
+                        a(href="#").actors__link
+                            img(src="../src/images/photo/4h.png", alt="Cory Wagner").actors__img
+                        h3.actors__title Cory Wagner
+                    .actors-item
+                        a(href="#").actors__link
+                            img(src="../src/images/photo/5h.png", alt="Lindsay Russell").actors__img
+                        h3.actors__title Lindsay Russell
+                    .actors-item
+                        a(href="#").actors__link
+                            img(src="../src/images/photo/6h.png", alt="Ellie-Louise Ray").actors__img
+                        h3.actors__title Ellie-Louise Ray
+        section.section
+            .container
+                .marketing
+                    .marketing-item
+                        a(href="#").marketing__link
+                            img(src="../src/images/art.png", alt="Art").marketing__img
+                    .marketing-item
+                        a(href="#").marketing__link
+                            img(src="../src/images/marketing02.png", alt="Marketing").marketing__img
+        section.section
+            .container
+                .offer
+                    h2.offer__title Are You New Here?  Don't wait, Register Now.
+                    button.offer__btn Register
+
+
+        include modules/footer
